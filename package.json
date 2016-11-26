@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "prod": "gulp --production",
-    "dev": "gulp watch"
+    "dev": "gulp watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
@@ -16,6 +18,8 @@
     "vue-resource": "^1.0.3"
   },
   "dependencies": {
-    "semantic-ui": "^2.2.6"
-  }
+    "semantic-ui": "^2.2.6",
+    "snyk": "^1.20.0"
+  },
+  "snyk": true
 }
