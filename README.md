@@ -1,4 +1,4 @@
-# Search-Song [![Build Status](https://travis-ci.org/Epistol/Search-Song.svg?branch=master)](https://travis-ci.org/Epistol/Search-Song)
+# Search-Song [![Build Status](https://travis-ci.org/Epistol/Search-Song.svg?branch=master)](https://travis-ci.org/Epistol/Search-Song) [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Search-Song/Lobby)
 
 
 Search Song is a online platform for listening parts of music from multiples online services.
