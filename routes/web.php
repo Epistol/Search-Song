@@ -31,3 +31,6 @@ Route::post('users', 'UsersController@postInfos');
 
 Route::get('contact', 'ContactController@getForm');
 Route::post('contact', 'ContactController@postForm');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
