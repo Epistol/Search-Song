@@ -25,12 +25,12 @@ Route::get('facture/{n}', function($n) {
     return view('facture')->withNumero($n);
 })->where('n', '[0-9]+');
 
-Route::get('users', 'UsersController@getInfos');
-Route::post('users', 'UsersController@postInfos');
-
 
 Route::get('contact', 'ContactController@getForm');
 Route::post('contact', 'ContactController@postForm');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('compte', 'UsersController@getInfos');
+Route::post('compte', 'UsersController@postInfos');

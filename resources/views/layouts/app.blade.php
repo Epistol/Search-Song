@@ -7,8 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+
 
     <!-- Scripts -->
     <script>
@@ -20,6 +19,11 @@
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="semantic/dist/components/dropdown.css">
     <script src="semantic/dist/semantic.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css" >
+
+
 
     <title>@yield('title', config('app.name') )</title>
 
@@ -35,18 +39,10 @@
 </head>
 <body>
 <div id="app">
-    <div class="ui inverted menu">
+    <div class="ui inverted menu no-border">
         <div class="container">
             <div class="navbar-header">
 
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
 
                 <!-- Branding Image -->
                 <a class="header item" href="{{ url('/') }}">
@@ -64,6 +60,12 @@
                 <div class="ui simple dropdown item">
                     {{ Auth::user()->name }} <i class="dropdown icon"></i>
                     <div class="menu">
+
+                        <a class="item" href="{{ url('/compte') }}">
+                            Compte
+                        </a>
+
+
                         <a class="item" href="{{ url('/logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -95,11 +97,14 @@
 
         </div>
     </div>
+
+<div class="main ui container">
+    @yield('content')
 </div>
 
 
-@yield('content')
 
+</div>
 
 <!-- Scripts -->
 <script src="/js/app.js"></script>

@@ -1,7 +1,16 @@
-@extends('template')
+@extends('layouts.app')
 
-@section('contenu')
-    {!! Form::open(['url' => 'users']) !!}
+@section('content')
+
+    @if(isset($name) and !empty($name))
+
+        Hello, {{ $name }}.
+
+    @endif
+
+
+
+    {!! Form::open(['url' => 'compte']) !!}
     {!! Form::label('nom', 'Entrez votre nom : ') !!}
     {!! Form::text('nom') !!}
     {!! Form::submit('Envoyer !') !!}

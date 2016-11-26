@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     public function getInfos()
     {
         return view('infos');
@@ -13,6 +20,6 @@ class UsersController extends Controller
 
     public function postInfos(Request $request)
     {
-        return 'Le nom est ' . $request->input('nom');
+        return view('infos', ['name' => $request->input('nom') ] );
     }
 }
