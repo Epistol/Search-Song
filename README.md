@@ -1,4 +1,5 @@
-# Search-Song
+# Search-Song [![Build Status](https://travis-ci.org/Epistol/Search-Song.svg?branch=master)](https://travis-ci.org/Epistol/Search-Song)
+
 
 Search Song is a online platform for listening parts of music from multiples online services.
 
