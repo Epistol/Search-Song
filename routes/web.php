@@ -17,11 +17,11 @@ Route::get('article/{n}', 'ArticleController@show')->where('n', '[0-9]+');
 
 
 
-Route::get('{n}', function($n) {
+Route::get('{n}', function ($n) {
     return view('vue1');
 })->where('n', '[1-3]');
 
-Route::get('facture/{n}', function($n) {
+Route::get('facture/{n}', function ($n) {
     return view('facture')->withNumero($n);
 })->where('n', '[0-9]+');
 

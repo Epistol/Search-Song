@@ -11,6 +11,7 @@ class ContactRequest extends FormRequest
      *
      * @return bool
      */
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -29,9 +30,9 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'nom' => 'required|min:5|max:20|alpha',
+            'nom'   => 'required|min:5|max:20|alpha',
             'email' => 'required|email',
-            'texte' => 'required|max:250'
+            'texte' => 'required|max:250',
         ];
     }
 }
