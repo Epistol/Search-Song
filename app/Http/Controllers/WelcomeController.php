@@ -11,7 +11,7 @@ class WelcomeController extends Controller
         var_dump($command);
 
 
-        $var = "Get Lucky";
+        $var = 'Get Lucky';
 
         exec("/usr/bin/python $command 'Get Lucky'", $output, $return);
 
