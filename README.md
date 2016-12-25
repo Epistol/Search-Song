@@ -13,6 +13,7 @@ Search Song is a online platform for listening parts of music from multiples onl
 * [Laravel](https://laravel.com/docs/5.3/) - The web framework used
 * [Semantic UI](http://semantic-ui.com/introduction/getting-started.html) - CSS Part
 * [Python](https://www.python.org/) - Retrieving informations
+* A lot of time
 
 ## Authors
 
