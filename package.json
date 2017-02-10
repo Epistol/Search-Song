@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "semantic-ui": "^2.2.6",
-    "snyk": "^1.20.0"
+    "snyk": "^1.25.0"
   },
   "snyk": true
 }
