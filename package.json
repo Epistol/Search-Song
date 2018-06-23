@@ -4,7 +4,8 @@
     "prod": "gulp --production",
     "dev": "gulp watch",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
@@ -19,7 +20,7 @@
   },
   "dependencies": {
     "semantic-ui": "^2.2.6",
-    "snyk": "^1.25.0"
+    "snyk": "^1.83.0"
   },
   "snyk": true
 }
