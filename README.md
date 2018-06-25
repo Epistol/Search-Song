@@ -1,3 +1,6 @@
+![Logo](https://raw.githubusercontent.com/Epistol/Search-Song/master/search.png)
+
+
 # Search-Song [![Build Status](https://travis-ci.org/Epistol/Search-Song.svg?branch=master)](https://travis-ci.org/Epistol/Search-Song) [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Search-Song/Lobby)  [![Known Vulnerabilities](https://snyk.io/test/github/epistol/search-song/badge.svg)](https://snyk.io/test/github/epistol/search-song) [![StyleCI](https://styleci.io/repos/74824265/shield?branch=master)](https://styleci.io/repos/74824265)
 
 
